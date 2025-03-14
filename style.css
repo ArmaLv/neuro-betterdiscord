@@ -1,0 +1,150 @@
+/* CustomTheme.theme.css */
+
+/* Root Color Variables */
+:root {
+  --soft-salmon: #efaaa2;
+  --summer-fig: #c04c39;
+  --lugganath-orange: #f4a88a;
+  --pohutukawa: #621424;
+  --delhi-spice: #a7666d;
+  --whisper-of-rose: #cea6ac;
+  --red-mahogany: #5e313d;
+  --black-safflower: #2d2633;
+  --wisley-pink: #eea79d;
+}
+
+/* General Background */
+.theme-dark {
+  --background-primary: var(--black-safflower) !important;
+  --background-secondary: var(--black-safflower) !important;
+  --background-tertiary: var(--black-safflower) !important;
+}
+
+/* Text Color */
+.theme-dark .message {
+  color: var(--wisley-pink) !important;
+}
+
+/* Sidebar */
+.theme-dark .guilds-wrapper {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .guilds-wrapper .guild {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .guilds-wrapper .guild:hover {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .guilds-wrapper .guild.selected {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .guilds-wrapper .guild .guild-inner {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .guilds-wrapper .guild .guild-inner .guild-name {
+  color: var(--wisley-pink) !important;
+}
+
+/* Channel List */
+.theme-dark .channels-wrap {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .channel {
+  background: var(--black-safflower) !important;
+  color: var(--wisley-pink) !important;
+}
+
+.theme-dark .channel:hover {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .channel.selected {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .channel.selected .channel-name {
+  color: var(--wisley-pink) !important;
+}
+
+/* Chat Area */
+.theme-dark .chat {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .chat .message {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .chat .message:hover {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .chat .message.selected {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .chat .message .markup {
+  color: var(--wisley-pink) !important;
+}
+
+/* User List */
+.theme-dark .channel-members {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .channel-members .member {
+  background: var(--black-safflower) !important;
+  color: var(--wisley-pink) !important;
+}
+
+.theme-dark .channel-members .member:hover {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .channel-members .member.selected {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .channel-members .member .member-activity {
+  color: var(--wisley-pink) !important;
+}
+
+/* Server List */
+.theme-dark .guilds-wrapper .guilds .guild {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .guilds-wrapper .guilds .guild:hover {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .guilds-wrapper .guilds .guild.selected {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .guilds-wrapper .guilds .guild .guild-inner {
+  background: var(--black-safflower) !important;
+}
+
+.theme-dark .guilds-wrapper .guilds .guild .guild-inner .guild-name {
+  color: var(--wisley-pink) !important;
+}
+
+/* Window Buttons */
+.theme-dark .win-buttons .win-minimize,
+.theme-dark .win-buttons .win-maximize,
+.theme-dark .win-buttons .win-close {
+  background-color: var(--black-safflower) !important;
+}
+
+.theme-dark .win-buttons .win-minimize:hover,
+.theme-dark .win-buttons .win-maximize:hover,
+.theme-dark .win-buttons .win-close:hover {
+  background-color: var(--black-safflower) !important;
+}
