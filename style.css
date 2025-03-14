@@ -1,46 +1,61 @@
+/* IMPORTANT: Ensure Dark Mode is enabled in Discord settings for the theme to apply properly! */
 @import url('https://refact0r.github.io/midnight-discord/midnight.css');
 
+/* Root Color Variables */
 :root {
+  /* Font */
+  --font: 'Figtree', sans-serif;
 
-  --font: 'Figtree', sans-serif; 
-
+  /* Top Left Corner Text */
   --corner-text: 'Midnight';
 
-  --online-indicator: #efaaa2; 
-  --dnd-indicator: #c04c39; 
-  --idle-indicator: #f4a88a; 
-  --streaming-indicator: #621424; 
+  /* Status Indicators */
+  --online-indicator: #efaaa2;
+  --dnd-indicator: #c04c39;
+  --idle-indicator: #f4a88a;
+  --streaming-indicator: #621424;
 
-  --accent-1: #efaaa2; 
-  --accent-2: #c04c39; 
-  --accent-3: #f4a88a; 
-  --accent-4: #621424; 
-  --accent-5: #a7666d; 
-  --mention: hsla(0, 0%, 100%, 0.1); 
-  --mention-hover: hsla(0, 0%, 100%, 0.05); 
+  /* Accent Colors */
+  --accent-1: #efaaa2;
+  --accent-2: #c04c39;
+  --accent-3: #f4a88a;
+  --accent-4: #621424;
+  --accent-5: #a7666d;
+  --mention: hsla(0, 0%, 100%, 0.1);
+  --mention-hover: hsla(0, 0%, 100%, 0.05);
 
-  --text-0: #eea79d; 
-  --text-1: #eea79d; 
-  --text-2: #eea79d; 
-  --text-3: #eea79d; 
-  --text-4: #eea79d; 
-  --text-5: #eea79d; 
+  /* Text Colors */
+  --text-0: #eea79d;
+  --text-1: #eea79d;
+  --text-2: #eea79d;
+  --text-3: #eea79d;
+  --text-4: #eea79d;
+  --text-5: #eea79d;
 
-  --bg-1: #2d2633; 
-  --bg-2: #2d2633; 
-  --bg-3: #2d2633; 
-  --bg-4: #2d2633; 
-  --hover: hsla(0, 0%, 0%, 0.1); 
-  --active: hsla(0, 0%, 0%, 0.2); 
-  --message-hover: hsla(0, 0%, 0%, 0.1); 
+  /* Background and Dark Colors */
+  --bg-1: #2d2633;
+  --bg-2: #2d2633;
+  --bg-3: #2d2633;
+  --bg-4: #2d2633;
+  --hover: hsla(0, 0%, 0%, 0.1);
+  --active: hsla(0, 0%, 0%, 0.2);
+  --message-hover: hsla(0, 0%, 0%, 0.1);
+  /* Button Colors */
+  --button-bg: #633841;
+  --button-bg-hover: #7a4e5f;
+  --button-bg-active: #4e2f3a;
+  --button-text: #ffffff;
 
+  /* Spacing and Padding */
   --spacing: 12px;
 
+  /* Animations */
   --list-item-transition: 0.2s ease;
   --unread-bar-transition: 0.2s ease;
   --moon-spin-transition: 0.4s ease;
   --icon-spin-transition: 1s ease;
 
+  /* Corner Roundness (Border-Radius) */
   --roundness-xl: 22px;
   --roundness-l: 20px;
   --roundness-m: 16px;
@@ -48,15 +63,47 @@
   --roundness-xs: 10px;
   --roundness-xxs: 8px;
 
+  /* Direct Messages Moon Icon */
   --discord-icon: none;
   --moon-icon: block;
   --moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg');
   --moon-icon-size: auto;
 
+  /* Filter Uncolorable Elements */
   --login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4);
   --green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43);
   --blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2);
 
+  /* Nav Buttons */
   --windows-nav: none;
   --custom-nav: block;
+}
+
+/* Global Text Color */
+* {
+  color: var(--text-0) !important;
+}
+
+/* Background Color */
+body {
+  background-color: var(--bg-4);
+}
+
+/* Button Styling */
+.button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 8px 16px;
+  border-radius: var(--roundness-xs);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--button-bg-hover);
+}
+
+.button:active {
+  background-color: var(--button-bg-active);
 }
