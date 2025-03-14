@@ -1,150 +1,77 @@
-/* CustomTheme.theme.css */
+/* CustomMidnightTheme.theme.css */
+
+/* IMPORTANT: Ensure Dark Mode is enabled in Discord settings for the theme to apply properly! */
+@import url('https://refact0r.github.io/midnight-discord/midnight.css');
 
 /* Root Color Variables */
 :root {
-  --soft-salmon: #efaaa2;
-  --summer-fig: #c04c39;
-  --lugganath-orange: #f4a88a;
-  --pohutukawa: #621424;
-  --delhi-spice: #a7666d;
-  --whisper-of-rose: #cea6ac;
-  --red-mahogany: #5e313d;
-  --black-safflower: #2d2633;
-  --wisley-pink: #eea79d;
-}
+  /* Font */
+  --font: 'Figtree', sans-serif; /* Default Discord font is 'gg sans' */
 
-/* General Background */
-.theme-dark {
-  --background-primary: var(--black-safflower) !important;
-  --background-secondary: var(--black-safflower) !important;
-  --background-tertiary: var(--black-safflower) !important;
-}
+  /* Top Left Corner Text */
+  --corner-text: 'Midnight';
 
-/* Text Color */
-.theme-dark .message {
-  color: var(--wisley-pink) !important;
-}
+  /* Status Indicators */
+  --online-indicator: #efaaa2; /* Soft Salmon */
+  --dnd-indicator: #c04c39; /* Summer Fig */
+  --idle-indicator: #f4a88a; /* Lugganath Orange */
+  --streaming-indicator: #621424; /* Pohutukawa */
 
-/* Sidebar */
-.theme-dark .guilds-wrapper {
-  background: var(--black-safflower) !important;
-}
+  /* Accent Colors */
+  --accent-1: #efaaa2; /* Soft Salmon */
+  --accent-2: #c04c39; /* Summer Fig */
+  --accent-3: #f4a88a; /* Lugganath Orange */
+  --accent-4: #621424; /* Pohutukawa */
+  --accent-5: #a7666d; /* Delhi Spice */
+  --mention: hsla(0, 0%, 100%, 0.1); /* Soft Salmon with transparency */
+  --mention-hover: hsla(0, 0%, 100%, 0.05); /* Lighter Soft Salmon with transparency */
 
-.theme-dark .guilds-wrapper .guild {
-  background: var(--black-safflower) !important;
-}
+  /* Text Colors */
+  --text-0: #eea79d; /* Wisley Pink */
+  --text-1: #eea79d; /* Wisley Pink */
+  --text-2: #f4a88a; /* Lugganath Orange */
+  --text-3: #621424; /* Pohutukawa */
+  --text-4: #a7666d; /* Delhi Spice */
+  --text-5: #cea6ac; /* Whisper of Rose */
 
-.theme-dark .guilds-wrapper .guild:hover {
-  background: var(--black-safflower) !important;
-}
+  /* Background and Dark Colors */
+  --bg-1: #2d2633; /* Black Safflower */
+  --bg-2: #2d2633; /* Black Safflower */
+  --bg-3: #2d2633; /* Black Safflower */
+  --bg-4: #2d2633; /* Black Safflower */
+  --hover: hsla(0, 0%, 0%, 0.1); /* Soft Salmon hover effect */
+  --active: hsla(0, 0%, 0%, 0.2); /* Soft Salmon active effect */
+  --message-hover: hsla(0, 0%, 0%, 0.1); /* Soft Salmon message hover effect */
 
-.theme-dark .guilds-wrapper .guild.selected {
-  background: var(--black-safflower) !important;
-}
+  /* Spacing and Padding */
+  --spacing: 12px;
 
-.theme-dark .guilds-wrapper .guild .guild-inner {
-  background: var(--black-safflower) !important;
-}
+  /* Animations */
+  --list-item-transition: 0.2s ease;
+  --unread-bar-transition: 0.2s ease;
+  --moon-spin-transition: 0.4s ease;
+  --icon-spin-transition: 1s ease;
 
-.theme-dark .guilds-wrapper .guild .guild-inner .guild-name {
-  color: var(--wisley-pink) !important;
-}
+  /* Corner Roundness (Border-Radius) */
+  --roundness-xl: 22px;
+  --roundness-l: 20px;
+  --roundness-m: 16px;
+  --roundness-s: 12px;
+  --roundness-xs: 10px;
+  --roundness-xxs: 8px;
 
-/* Channel List */
-.theme-dark .channels-wrap {
-  background: var(--black-safflower) !important;
-}
+  /* Direct Messages Moon Icon */
+  --discord-icon: none;
+  --moon-icon: block;
+  --moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg');
+  --moon-icon-size: auto;
 
-.theme-dark .channel {
-  background: var(--black-safflower) !important;
-  color: var(--wisley-pink) !important;
-}
+  /* Filter Uncolorable Elements */
+  --login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4);
+  --green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43);
+  --blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2);
 
-.theme-dark .channel:hover {
-  background: var(--black-safflower) !important;
-}
-
-.theme-dark .channel.selected {
-  background: var(--black-safflower) !important;
-}
-
-.theme-dark .channel.selected .channel-name {
-  color: var(--wisley-pink) !important;
-}
-
-/* Chat Area */
-.theme-dark .chat {
-  background: var(--black-safflower) !important;
-}
-
-.theme-dark .chat .message {
-  background: var(--black-safflower) !important;
-}
-
-.theme-dark .chat .message:hover {
-  background: var(--black-safflower) !important;
-}
-
-.theme-dark .chat .message.selected {
-  background: var(--black-safflower) !important;
-}
-
-.theme-dark .chat .message .markup {
-  color: var(--wisley-pink) !important;
-}
-
-/* User List */
-.theme-dark .channel-members {
-  background: var(--black-safflower) !important;
-}
-
-.theme-dark .channel-members .member {
-  background: var(--black-safflower) !important;
-  color: var(--wisley-pink) !important;
-}
-
-.theme-dark .channel-members .member:hover {
-  background: var(--black-safflower) !important;
-}
-
-.theme-dark .channel-members .member.selected {
-  background: var(--black-safflower) !important;
-}
-
-.theme-dark .channel-members .member .member-activity {
-  color: var(--wisley-pink) !important;
-}
-
-/* Server List */
-.theme-dark .guilds-wrapper .guilds .guild {
-  background: var(--black-safflower) !important;
-}
-
-.theme-dark .guilds-wrapper .guilds .guild:hover {
-  background: var(--black-safflower) !important;
-}
-
-.theme-dark .guilds-wrapper .guilds .guild.selected {
-  background: var(--black-safflower) !important;
-}
-
-.theme-dark .guilds-wrapper .guilds .guild .guild-inner {
-  background: var(--black-safflower) !important;
-}
-
-.theme-dark .guilds-wrapper .guilds .guild .guild-inner .guild-name {
-  color: var(--wisley-pink) !important;
-}
-
-/* Window Buttons */
-.theme-dark .win-buttons .win-minimize,
-.theme-dark .win-buttons .win-maximize,
-.theme-dark .win-buttons .win-close {
-  background-color: var(--black-safflower) !important;
-}
-
-.theme-dark .win-buttons .win-minimize:hover,
-.theme-dark .win-buttons .win-maximize:hover,
-.theme-dark .win-buttons .win-close:hover {
-  background-color: var(--black-safflower) !important;
+  /* Nav Buttons */
+  --windows-nav: none;
+  --custom-nav: block;
 }
